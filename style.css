@@ -700,7 +700,7 @@ body.dark-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff;
+    background-color: #7b4bb7;
     transition: .4s;
     border-radius: 30px;
 }
@@ -713,7 +713,7 @@ body.dark-mode {
     width: 22px;
     left: 4px;
     bottom: 4px;
-    background-color: rgb(136, 136, 136);
+    background-color: black;
     transition: .4s;
     border-radius: 50%;
 }
