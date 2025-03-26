@@ -56,7 +56,7 @@ html::-webkit-scrollbar-thum{
 .logo:hover{
     transform: scale(1.1);
 }
-.navbar{
+.navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -69,14 +69,22 @@ html::-webkit-scrollbar-thum{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-#menu-icon{
-    font-size: 3,6rem;
-    color: var(--main-color);
-    display: none;
-}
+
+.icon-container {
+    position: fixed; /* or 'absolute' if you want it relative to a parent */
+    top: 0;
+    right: 0;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .icon {
+    color: #7b4bb7;
+    font-size: 24px; /* Adjust size as needed */
+  }
+
 @media (max-width:995px){
-    #menu-icon{
-        display: block;
+    #icon-container{
+        display: none;
     }
     .navbar{
         position: absolute;
@@ -575,7 +583,7 @@ span{
     background-color: var(--main-color);
 }
 
-.footer.social{
+.footer .social{
     text-align: center;
     padding-bottom: 25px;
     color: black;
@@ -596,7 +604,7 @@ span{
 }
 
 .footer .social a:hover{
-    transform: scale(1.2) translate(-5px);
+    transform: scale(1.2) translateY(-5px);
     background: black;
     color: var(--main-color);
 }
@@ -605,6 +613,7 @@ span{
     margin-top: 0;
     padding: 0;
     font-size: 18px;
+    line-height: 1.8;
     margin-bottom: 0;
     text-align: center;
 }
@@ -652,7 +661,7 @@ footer .copyright{
         padding-bottom: 7rem;
     }
     .footer{
-        padding: 2rem 3%;
+        padding: 2rem 3%
     }
 }
 @media (max-width:895){
